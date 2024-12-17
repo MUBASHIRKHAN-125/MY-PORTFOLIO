@@ -2,7 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
-
+html{
+    font-size: 10px;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,6 +14,8 @@ header {
     justify-content: space-around;
     background-color: #1d5b91;
     padding: 28px 0px;
+    position: sticky;
+    top: 0px;
 }
 
 header .name {
@@ -56,25 +60,22 @@ nav ul li a {
     transition-delay: 0.1s;
     transition-duration: 0.3s;
 }
-
-.allmain1 {
-    background: #1e305a;
-    height: 815px;
+.section1 {
+    background: #142651;
+    min-height: 80vh;    
+   width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 50px;
 }
-
 .centerimage img:hover {
-    box-shadow: 1px 1px 20px rgb(192, 197, 220);
+    box-shadow: 1px 1px 20px rgb(78, 127, 148);
 }
-
 .centerimage {
     text-align: center;
 }
-
 .centerimage img {
     border: 6px solid white;
     border-color: #353156;
@@ -90,7 +91,6 @@ nav ul li a {
     display: flex;
     column-gap: 18px;
 }
-
 .button .but1 button,.but2 button {
     border: 3px solid rgb(38, 132, 226);
     border-radius: 6px;
@@ -119,11 +119,52 @@ nav ul li a {
     transform: scale(1.1);
     box-shadow: 1px 1px 10px skyblue;
 }
-.top {
+.textname {
     color: white;
     font-size: 30px;
 }
 
-.top a {
+.textname a {
     color: #16bb76;
+}
+.section2{
+    background-color:rgb(37, 51, 77);
+    opacity:0.95;
+    width: 100%;
+   min-height:70vh;    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.introhome p,p,p,p,p{
+    word-spacing: 4px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+p a{
+    color: #2bfbf1;
+    text-decoration:underline;
+    text-decoration-color: #5176cc;
+    font-size:3rem;
+}
+.introhome p span{
+    color: #17970f;
+}
+.myavator img{
+    background:none;
+    transform: scale(1.6);
+}
+footer{
+    display: flex;
+    height: 30vh;
+    background: #0e2047;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 80px;
+}
+.h2footer h2{
+    font-size:3rem;
+    color: white;
+    padding-top: 40px;
 }
