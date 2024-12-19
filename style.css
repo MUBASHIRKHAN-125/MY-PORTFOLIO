@@ -12,7 +12,7 @@ body {
 header {
     display: flex;
     justify-content: space-around;
-    background-color: #1d5b91;
+    background-color: #134068;
     padding: 28px 0px;
     position: sticky;
     top: 0px;
@@ -61,7 +61,7 @@ nav ul li a {
     transition-duration: 0.3s;
 }
 .section1 {
-    background: #142651;
+    background-color: rgb(15 35 72);
     min-height: 80vh;    
    width: 100%;
     display: flex;
@@ -119,7 +119,7 @@ nav ul li a {
     transform: scale(1.1);
     box-shadow: 1px 1px 10px skyblue;
 }
-.textname {
+.textname{
     color: white;
     font-size: 30px;
 }
@@ -127,11 +127,10 @@ nav ul li a {
 .textname a {
     color: #16bb76;
 }
-.section2{
-    background-color:rgb(37, 51, 77);
-    opacity:0.95;
+.section2{   
+     background-color: rgb(44 61 92);
     width: 100%;
-   min-height:70vh;    
+    min-height:70vh;    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -151,9 +150,8 @@ p a{
 .introhome p span{
     color: #17970f;
 }
-.myavator img{
-    background:none;
-    transform: scale(1.6);
+.myavator{
+ transform: scale(1.5);
 }
 footer{
     display: flex;
@@ -164,7 +162,24 @@ footer{
    row-gap: 80px;
 }
 .h2footer h2{
-    font-size:3rem;
+    font-size:4rem;
     color: white;
-    padding-top: 40px;
+    padding-top: 30px;
+}
+.anchorfooter{
+    display: flex;
+    column-gap: 30px;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 1px 1px 10px rgb(6, 73, 70);
+}
+#icon3{
+    font-size: 4rem;
+}
+#icon1 , #icon2 , #icon3 , #icon4{
+    background-color: white;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px; 
+    color: rgb(19, 140, 187);
 }

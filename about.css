@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mainaboutcont{
+    display: flex;
+     justify-content: space-around;
+     background-color: rgb(29 75 120);
+}
+.aboutpara{
+    margin-top: 40px;
+}
+.aboutpara p{
+    color: #7bdee9;
+    word-spacing: 8px;
+    font-size: 1.1rem;
+}
+.aboutpara span{
+    font-weight: 700;
+    color: rgb(237, 229, 229);
+}
+.aboutpara h1{
+    font-size: 3rem; 
+    color: #34aab7;
+}
+.aboutimg{
+    margin-top: 3rem;
+}
+.csscard:hover{
+    box-shadow: 1px 1px 10px darkolivegreen;
+}
+.htmlcard:hover{
+    box-shadow: 1px 1px 10px darkolivegreen;
+}
+#jscard:hover{
+    box-shadow: 1px 1px 20px darkolivegreen;
+}
+.csscard{
+    /* background-color: yellow; */
+border: 2px solid #5e1818;
+padding: 10px 30px;
+transition-property: all;
+transition-timing-function: ease-in-out;
+transition-delay: 0.1s;
+transition-duration: 0.3s;
+}
+#jscard{
+border: 2px solid #5e1818;
+padding: 0px 7px;
+padding-top: 10px;
+transition-property: all;
+transition-timing-function: ease-in-out;
+transition-delay: 0.1s;
+transition-duration: 0.3s;
+}
+.htmlcard{
+border: 2px solid  #5e1818;
+padding: 10px 5px;
+transition-property: all;
+transition-timing-function: ease-in-out;
+transition-delay: 0.1s;
+transition-duration: 0.3s;
+}
+.htmlcard img{
+    width: 200px;
+    height: 200px;
+}
+.csscard img{
+    width: 150px;
+    height: 200px;
+}
+#jscard img{
+    width: 200px;
+    height: 200px;
+}
+.mainab{
+    height: 58vh;
+    background-color: grey;
+}
+.mainskill{
+    display: flex;
+    justify-content: center;
+    column-gap: 6rem;
+    padding: 90px;
+}
