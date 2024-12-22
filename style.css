@@ -182,4 +182,7 @@ footer{
     height: 70px;
     width: 70px; 
     color: rgb(19, 140, 187);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

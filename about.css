@@ -5,13 +5,68 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(18 69 92);
+    padding: 28px 0px;
+    position: sticky;
+    top: 0px;
+}
+
+header .name {
+    color: rgb(70 217 217);
+    font-size: 20px;
+    cursor:pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+}
+
+nav ul li {
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+}
+
+.home a {
+    color: #65db50;
+    text-decoration: underline;
+}
+
+nav ul li a:hover {
+    color: #65db50;
+    text-decoration: underline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+}
 .mainaboutcont{
     display: flex;
      justify-content: space-around;
      background-color: rgb(29 75 120);
+     height: 60vh;
 }
 .aboutpara{
     margin-top: 40px;
+}
+.aboutpara h1 span{
+    color: #27b38d;
 }
 .aboutpara p{
     color: #7bdee9;
@@ -29,18 +84,13 @@ body{
 .aboutimg{
     margin-top: 3rem;
 }
-.csscard:hover{
-    box-shadow: 1px 1px 10px darkolivegreen;
-}
-.htmlcard:hover{
-    box-shadow: 1px 1px 10px darkolivegreen;
-}
-#jscard:hover{
-    box-shadow: 1px 1px 20px darkolivegreen;
+#jscard:hover , .htmlcard:hover , .csscard:hover{
+    box-shadow: 1px 1px 10px rgb(36, 43, 25);
+    transform: scale(1.1);
+    cursor: pointer;
 }
 .csscard{
-    /* background-color: yellow; */
-border: 2px solid #5e1818;
+border: 4px solid  #0e0101;
 padding: 10px 30px;
 transition-property: all;
 transition-timing-function: ease-in-out;
@@ -48,7 +98,7 @@ transition-delay: 0.1s;
 transition-duration: 0.3s;
 }
 #jscard{
-border: 2px solid #5e1818;
+    border: 4px solid  #0e0101;
 padding: 0px 7px;
 padding-top: 10px;
 transition-property: all;
@@ -57,7 +107,7 @@ transition-delay: 0.1s;
 transition-duration: 0.3s;
 }
 .htmlcard{
-border: 2px solid  #5e1818;
+border: 4px solid  #0e0101;
 padding: 10px 5px;
 transition-property: all;
 transition-timing-function: ease-in-out;
@@ -78,7 +128,7 @@ transition-duration: 0.3s;
 }
 .mainab{
     height: 58vh;
-    background-color: grey;
+    background-color: #103960;
 }
 .mainskill{
     display: flex;
