@@ -62,13 +62,14 @@ nav ul li a {
     transition-duration: 0.3s;
 }
 .section1 {
-    background-color: rgb(15 35 72);
-    min-height: 80vh;    
+    background-color: rgb(15 35 72);   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 60px;
 }
 .centerimage img {
     box-shadow: 1px 1px 10px rgb(94, 202, 90);
@@ -138,7 +139,8 @@ nav ul li a {
 .section2{   
      background-color: rgb(44 61 92);
     width: 100%;
-    min-height:70vh;    
+    padding-top: 80px;
+    padding-bottom: 90px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -163,11 +165,11 @@ p a{
 }
 footer{
     display: flex;
-    height: 30vh;
     background: #0e2047;
    flex-direction: column;
    align-items: center;
    row-gap: 80px;
+   padding-bottom: 60px;
 }
 .h2footer h2{
     font-size:4rem;
@@ -202,5 +204,5 @@ footer{
     transition-property: all;
     transition-delay: 0.1s;
     transition-duration: 0.3s;
-    transition-timing-function: ease-in-out
+    transition-timing-function: ease-in-out;
 }

@@ -61,7 +61,6 @@ nav ul li a{
     display: flex;
      justify-content: space-around;
      background-color: rgb(29 75 120);
-     height: 60vh;
 }
 .aboutpara{
     margin-top: 40px;
@@ -128,7 +127,6 @@ transition-duration: 0.3s;
     height: 200px;
 }
 .section2{
-    height: 58vh;
     background-color: #103960;
 }
 .mainskill{

@@ -45,12 +45,12 @@ nav ul li a:hover ,#contact a{
     display: flex;
     justify-content: space-around;
     background-color: #14979b;
-    height: 50vh;
 }
 .contact input{
     padding: 8px 73px;
     border-radius: 6px;
     border: 1px solid black;
+    font-size: 1rem;
 }
 .contact input::placeholder{
     font-style: italic;
@@ -58,6 +58,9 @@ nav ul li a:hover ,#contact a{
 }
 .textarea textarea{
     border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
 }
 .textarea textarea::placeholder{
     font-style: italic;
@@ -71,6 +74,7 @@ nav ul li a:hover ,#contact a{
    flex-direction: column;
    row-gap: 10px;
    padding-top: 30px;
+   padding-bottom: 50px;
 }
 .contact h1{
     font-size: 2rem;
@@ -96,6 +100,31 @@ footer p{
     color: #6eff9c;
     font-size: 1.11rem;
 }
+.button{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+.Refresh button:hover{
+    cursor: pointer;
+    background-color:rgba(189, 8, 8 ,1);
+    color: white;
+    transform: scale(1.09);
+}
+.Refresh button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+.Refresh i{
+    font-size: 18px;
+}
 .but{
    display: flex;
    justify-content:center; 
@@ -103,7 +132,8 @@ footer p{
 .but button:hover{
     cursor: pointer;
     background-color: white;
-    color: black
+    color: black;
+    transform: scale(1.05);
 }
 .but button{
     padding: 10px 38px;
@@ -117,5 +147,8 @@ footer p{
     transition-duration: 0.3s;
     transition-delay: 0.1s;
     transition-timing-function: ease-in-out;
+}
+.button{
+    padding-top: 10px;
 }
   

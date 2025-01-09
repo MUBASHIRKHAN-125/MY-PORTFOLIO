@@ -10,7 +10,7 @@ body{
 header{
     display: flex;
     justify-content: space-around;
-    background-color: #b70829;
+    background-color: #155e7e;
     padding: 23px 0px;
 }
 .logoname{
@@ -46,7 +46,7 @@ ul li a{
     text-align: center;
     font-size: 1.89rem;
     padding: 10px 0px;
-    color: #b70829;
+    color: #0c679f;
 }
 .sec1:hover{
     text-decoration: underline;
