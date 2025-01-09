@@ -36,10 +36,10 @@ transition-timing-function: ease-in-out;
 nav ul li:hover{
     transform: scale(1.2);
 }
-nav ul li a:hover ,#home a{
+nav ul li a:hover ,#contact a{
     text-decoration: underline;
     cursor: pointer;
-    color: #42c104;
+    color: #a4b719;
 }
 .sec1{
     display: flex;
@@ -54,6 +54,7 @@ nav ul li a:hover ,#home a{
 }
 .contact input::placeholder{
     font-style: italic;
+    font-weight: bold;
 }
 .textarea textarea{
     border-radius: 8px;
@@ -63,6 +64,7 @@ nav ul li a:hover ,#home a{
     text-align: center;
     font-size: 20px;
     opacity: 0.7;
+    font-weight: bold;
 }
 .contact{
    display: flex;

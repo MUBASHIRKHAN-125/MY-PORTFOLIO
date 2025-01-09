@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+  justify-content: space-around;
+  background-color: #5c95ff;
+  padding: 25px 0px;
+}
+.logoname{
+    font-size: 1.4rem;
+    color: white;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    column-gap: 30px;
+}
+ul li:hover{
+    transform:scale(1.1);
+}
+ul li{
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+ul li a:hover , .project a{
+    text-decoration: underline;
+    color:rgb(244, 247, 239);
+}
+ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+}

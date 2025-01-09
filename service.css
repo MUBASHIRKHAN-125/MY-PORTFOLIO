@@ -5,12 +5,13 @@
 }
 body{
     font-family: sans-serif;
+    background-color: rgb(189 189 189);
 }
 header{
     display: flex;
     justify-content: space-around;
     background-color: #b70829;
-    padding: 22px 0px;
+    padding: 23px 0px;
 }
 .logoname{
     font-size: 1.40rem;
@@ -31,12 +32,74 @@ ul li{
     transition-delay: 0.1s;
     transition-timing-function: ease-in-out;
 }
-ul li a:hover ,.home a{
+ul li a:hover ,.service a{
     text-decoration: underline;
     color: white;
+    text-decoration-thickness: 2px;
 }
 ul li a{
     text-decoration: none;
     font-size: 1.22rem;
-    color: white;
+    color: rgb(255 242 68);
+}
+.sec1{
+    text-align: center;
+    font-size: 1.89rem;
+    padding: 10px 0px;
+    color: #b70829;
+}
+.sec1:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+#sec2 img{
+    width: 100%;
+    height: 60vh;
+}
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    padding-top: 10px;
+}
+.card1:hover ,.card2:hover ,.card3:hover{
+   cursor: pointer;
+   transform: scale(1.033);
+}
+.card1 ,.card2 ,.card3{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border: 1px solid white;
+    padding: 30px 30px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 2);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+.card1 big:hover ,.card2  big:hover,.card3 big:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+.card1 big ,.card2  big,.card3 big{
+    font-weight: bold;
+    color: #b70829;
+}
+.head3{
+    text-align: center;
+}
+.card1 p ,.card2  p,.card3 p{
+    line-height: 30px;
+    word-spacing: 3px;
+   opacity: 0.5;
+   text-align: center;
+}
+.text1,.text2,.text3{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #0b0a18;
 }
