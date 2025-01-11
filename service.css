@@ -11,7 +11,7 @@ header{
     display: flex;
     justify-content: space-around;
     background-color: #155e7e;
-    padding: 23px 0px;
+    padding: 27px 0px;
 }
 .logoname{
     font-size: 1.40rem;
@@ -20,7 +20,7 @@ header{
 }
 nav ul{
     display: flex;
-    column-gap: 20px;
+    column-gap: 25px;
     list-style: none;
 } 
 ul li:hover{
@@ -60,7 +60,8 @@ ul li a{
     display: flex;
     justify-content: center;
     column-gap: 50px;
-    padding-top: 10px;
+    padding-top: 32px;
+  padding-bottom: 20px;
 }
 .card1:hover ,.card2:hover ,.card3:hover{
    cursor: pointer;

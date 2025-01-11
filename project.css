@@ -5,11 +5,12 @@
 }
 body{
     font-family: sans-serif;
+    background-color: #004368;
 }
 header{
     display: flex;
   justify-content: space-around;
-  background-color: #5c95ff;
+  background-color: #1b667a;
   padding: 25px 0px;
 }
 .logoname{
@@ -36,10 +37,79 @@ ul li a:hover , .project a{
 }
 ul li a{
     color: black;
+    font-weight: bold;
     text-decoration: none;
     font-size: 1.4rem;
     transition-property: all;
     transition-duration: 0.3s;
     transition-delay: 0.1s;
     transition-timing-function: ease-in-out;
+}
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.heading:hover{
+    text-decoration: underline;
+    text-decoration-color: #c7c2c2;
+}
+section{
+    padding-top: 10px;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    column-gap: 38px;
+    padding-top: 10px;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    column-gap:38px;
+    padding-top: 30px;
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    column-gap:48px;
+    padding-top: 30px;
+}
+.pro1 ,.pro2 ,.pro3 ,.pro4 ,.pro5 ,.pro6{
+    border: 6px solid rgb(255, 250, 254);
+    border-radius: 12px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+.pro1:hover ,.pro2:hover ,.pro3:hover ,.pro4:hover ,.pro5:hover ,.pro6:hover{
+    transform: scale(1.055);
+    cursor: pointer;
+}
+.pro1 img{
+    width: 350px;
+    height: 400px;
+}
+.pro2 img{
+    width: 350px;
+    height: 400px;
+}
+.pro3 img{
+    width: 360px;
+    height: 340px;
+}
+.pro4 img{
+    width: 350px;
+    height: 340px;
+}
+.pro5 img{
+    width: 358px;
+    height: 350px;
+}
+.pro6 img{
+    width: 351px;
+    height: 350px;
 }

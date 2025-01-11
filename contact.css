@@ -45,6 +45,8 @@ nav ul li a:hover ,#contact a{
     display: flex;
     justify-content: space-around;
     background-color: #14979b;
+    padding-top: 30px;
+    flex-wrap: wrap;
 }
 .contact input{
     padding: 8px 73px;
@@ -74,11 +76,16 @@ nav ul li a:hover ,#contact a{
    flex-direction: column;
    row-gap: 10px;
    padding-top: 30px;
-   padding-bottom: 50px;
+   padding-bottom: 80px;
+}
+.contact h1:hover{
+    text-decoration: underline;
+    text-decoration-color: #15301d;
 }
 .contact h1{
-    font-size: 2rem;
+    font-size: 2.011rem;
     color: #0a2562;
+    text-align: center;
 }
 .image img{
     width: 320px;
@@ -86,19 +93,25 @@ nav ul li a:hover ,#contact a{
 footer h3{
     font-size: 2rem;
     text-decoration: underline;
-    color:#004e60;
+    color:#ceffe9;
+    font-weight: bold;
 }
 footer{
-    background-color: #338487;
-    height:40vh;
     padding-top: 30px;
+    padding-bottom: 58px;
+    background-color: #338487;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+
 }
 footer p{
-    padding-top: 25px;
     line-height: 30px;
     word-spacing: 3px;
     color: #6eff9c;
     font-size: 1.11rem;
+    padding-bottom: 20px;
 }
 .button{
     display: flex;

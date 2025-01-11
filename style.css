@@ -76,7 +76,6 @@ nav ul li a {
 }
 .centerimage {
     text-align: center;
-  
 }
 .centerimage{
     transform: translate(120px 0px);
@@ -144,12 +143,15 @@ nav ul li a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+
 }
 .introhome p,p,p,p,p{
     word-spacing: 4px;
     color: #ffffff;
     font-size: 20px;
     text-align: center;
+    padding-bottom: 20px;
 }
 p a{
     color: #2bfbf1;
@@ -179,7 +181,7 @@ footer{
 .anchorfooter{
     display: flex;
     column-gap: 30px;
-    font-size: 5rem;
+    font-size: 4.12rem;
     text-align: center;
     text-shadow: 1px 1px 10px rgb(39, 73, 62);
 }
