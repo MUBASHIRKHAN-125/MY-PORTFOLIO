@@ -78,6 +78,7 @@ section{
     padding-top: 30px;
 }
 .pro1 ,.pro2 ,.pro3 ,.pro4 ,.pro5 ,.pro6{
+    box-shadow: 1px 1px 10px  rgb(179, 199, 1);
     border: 6px solid rgb(255, 250, 254);
     border-radius: 12px;
     transition-property: all;
