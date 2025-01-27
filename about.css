@@ -1,11 +1,13 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 header {
     display: flex;
     justify-content: space-around;
@@ -18,7 +20,7 @@ header {
 header .name {
     color: rgb(70 217 217);
     font-size: 20px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 nav ul {
@@ -48,7 +50,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     font-size: 18px;
     color: white;
@@ -57,84 +59,157 @@ nav ul li a{
     transition-delay: 0.1s;
     transition-duration: 0.3s;
 }
-.section1{
+
+.section1 {
     display: flex;
-     justify-content: space-around;
-     background-color: rgb(29 75 120);
-     flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(29 75 120);
+    flex-wrap: wrap;
+    row-gap: 40px;
+    padding: 100px 0px;
 }
-.aboutpara{
-    margin-top: 40px;
+
+.aboutimg {
+    align-self: center;
 }
-.aboutpara h1 span{
+
+.aboutpara {
+    align-self: center;
+}
+
+.aboutpara h1 span {
     color: #27b38d;
 }
-.aboutpara p{
+
+.aboutpara p {
     color: #7bdee9;
     word-spacing: 8px;
     font-size: 1.1rem;
 }
-.aboutpara span{
+
+.aboutpara span {
     font-weight: 700;
     color: rgb(237, 229, 229);
 }
-.aboutpara h1{
-    font-size: 3rem; 
+
+.aboutpara h1 {
+    font-size: 3rem;
     color: #34aab7;
 }
-.aboutimg{
-    margin-top: 3rem;
-}
-#jscard:hover , .htmlcard:hover , .csscard:hover{
+
+#jscard:hover,
+.htmlcard:hover,
+.csscard:hover {
     box-shadow: 1px 1px 10px rgb(36, 43, 25);
     transform: scale(1.1);
     cursor: pointer;
 }
-.csscard{
-border: 4px solid  #0c8b66;
-padding: 10px 30px;
-transition-property: all;
-transition-timing-function: ease-in-out;
-transition-delay: 0.1s;
-transition-duration: 0.3s;
+
+.csscard {
+    border: 4px solid #0c8b66;
+    padding: 10px 30px;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
 }
-#jscard{
-border: 4px solid  #0c8b66;
-padding: 0px 7px;
-padding-top: 10px;
-transition-property: all;
-transition-timing-function: ease-in-out;
-transition-delay: 0.1s;
-transition-duration: 0.3s;
+
+#jscard {
+    border: 4px solid #0c8b66;
+    padding: 0px 7px;
+    padding-top: 10px;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
 }
-.htmlcard{
-border: 4px solid  #0c8b66;
-padding: 10px 5px;
-transition-property: all;
-transition-timing-function: ease-in-out;
-transition-delay: 0.1s;
-transition-duration: 0.3s;
+
+.htmlcard {
+    border: 4px solid #0c8b66;
+    padding: 10px 5px;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
 }
-.htmlcard img{
+
+.htmlcard img {
     width: 200px;
     height: 200px;
 }
-.csscard img{
+
+.csscard img {
     width: 150px;
     height: 200px;
 }
-#jscard img{
+
+#jscard img {
     width: 200px;
     height: 200px;
 }
-.section2{
-    background-color: #103960;
-}
-.mainskill{
+
+.section2 {
     display: flex;
+    align-items: center;
     justify-content: center;
-    column-gap: 6rem;
-    padding: 90px;
-    flex-wrap: wrap;
-    row-gap: 20px;
+    background-color: #103960;
+    padding: 80px 0px;
 }
+
+.mainskill {
+    display: flex;
+    column-gap: 6rem;
+}
+@media (max-width:991px) {
+    header{
+        position: static;
+    }
+    .aboutpara h1{
+        text-align: center;
+    }
+    .aboutpara p {
+        line-height: 28px;
+        text-align: center;
+    }
+}
+@media (max-width:767px) {
+    header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+    }
+    header .name {
+       font-size: 2rem;
+    }
+    .aboutpara p {
+        text-align: center;
+    }
+    .mainskill {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+@media (max-width:567px) {
+    header ul{
+        column-gap: 20px;
+    }
+}
+@media (max-width:390px) {
+    nav ul{
+        column-gap: 35px;
+       flex-wrap:wrap;
+       row-gap: 15px;
+       justify-content: center;
+    }
+    header .name{
+       font-size: 2rem;
+    }
+    .aboutpara p {
+        word-spacing: 3px;
+    }
+    .section1 {
+        padding-top:50px;
+    }
+   }

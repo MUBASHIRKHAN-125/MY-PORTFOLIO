@@ -49,21 +49,20 @@ ul li a{
     text-align: center;
     font-size: 2rem;
     color: white;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 .heading:hover{
     text-decoration: underline;
     text-decoration-color: #c7c2c2;
 }
-section{
-    padding-top: 10px;
+.sec1{
+    padding-top: 50px;
 }
 .container1{
     display: flex;
     justify-content: center;
     column-gap: 38px;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 .container2{
     display: flex;
@@ -72,6 +71,12 @@ section{
     padding-top: 30px;
 }
 .container3{
+    display: flex;
+    justify-content: center;
+    column-gap:48px;
+    padding-top: 30px;
+}
+.container0{
     display: flex;
     justify-content: center;
     column-gap:48px;
@@ -112,5 +117,32 @@ section{
 }
 .pro6 img{
     width: 351px;
-    height: 350px;
+    height: 350px; 
 }
+@media (max-width:767px) {
+    header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+    }
+    header .logoname{
+       font-size: 2rem;
+    }
+    .container1 ,.container2 ,.container3{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+}
+@media (max-width:390px) {
+    nav ul{
+        column-gap: 30px;
+       flex-wrap:wrap;
+       row-gap: 15px;
+       justify-content: center;
+    }
+    header .name{
+       font-size: 2rem;
+    }
+   }
