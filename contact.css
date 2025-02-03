@@ -182,6 +182,9 @@ footer p{
     header ul{
         column-gap: 17px;
     }
+    #iconremove576{
+        display: none;
+     }
 }
 @media (max-width:390px) {
     nav ul{

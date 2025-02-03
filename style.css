@@ -207,11 +207,6 @@ footer {
     text-align: center;
     text-shadow: 1px 1px 10px rgb(39, 73, 62);
 }
-
-#icon3 {
-    font-size: 4.5rem;
-}
-
 #icon1:hover,
 #icon2:hover,
 #icon3:hover,
@@ -234,21 +229,20 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-property: all;
-    transition-delay: 0.1s;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
+    transition: all 0.3s ease-out;
 }
 @media (max-width:991px) {
     header{
         position: static;
+        flex-wrap: wrap;
+        row-gap: 10px;
     }
     .section2 {
     flex-direction: column;
     row-gap: 30px;
     }
 }
-@media (max-width:767px) {
+@media (max-width:780px) {
     header{
       display: flex;
       flex-direction: column;
@@ -258,6 +252,14 @@ footer {
     header .name {
        font-size: 3rem;
     }
+    #icon1, #icon2, #icon3, #icon4{
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+}
+.anchorfooter {
+    font-size: 3rem;
+}
 }
 @media (max-width:567px) {
     header ul{
@@ -266,16 +268,22 @@ footer {
    .h2footer h2{ 
 text-align:center ;
     }
+    #iconremove576{
+       display: none;
+    }
+    .introhome p, p, p, p, p {
+        word-spacing: 2px;
+    }
 }
-@media (max-width:390px) {
+@media (max-width:450px) {
  nav ul{
-    column-gap: 40px;
+    column-gap:28px;
     flex-wrap:wrap;
     row-gap: 15px;
     justify-content: center;
  }
  header .name{
-    font-size: 2rem;
+    font-size: 2.4rem;
  }
  .textname {
     text-align: center;
@@ -283,4 +291,13 @@ text-align:center ;
 .anchorfooter{
     column-gap: 20px;
 }
+.textname {
+    font-size:26px;
+}
+}
+@media (max-width:340px) {
+    nav ul{
+        column-gap:14px;
+        justify-content: center;
+     }
 }

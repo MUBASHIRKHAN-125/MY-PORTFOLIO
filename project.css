@@ -9,9 +9,13 @@ body{
 }
 header{
     display: flex;
-  justify-content: space-around;
-  background-color: #1b667a;
-  padding: 25px 0px;
+    justify-content: space-around;
+    background-color: #1b667a;
+    padding: 25px 0px;
+}
+nav{
+    display: flex;
+    align-items: center;
 }
 .logoname{
     font-size: 1.4rem;
@@ -39,11 +43,14 @@ ul li a{
     color: black;
     font-weight: bold;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 18.4px;
     transition-property: all;
     transition-duration: 0.3s;
     transition-delay: 0.1s;
     transition-timing-function: ease-in-out;
+}
+header i{
+    font-size: px;
 }
 .heading{
     text-align: center;
@@ -57,6 +64,7 @@ ul li a{
 }
 .sec1{
     padding-top: 50px;
+    padding-bottom: 60px;
 }
 .container1{
     display: flex;
@@ -82,42 +90,19 @@ ul li a{
     column-gap:48px;
     padding-top: 30px;
 }
-.pro1 ,.pro2 ,.pro3 ,.pro4 ,.pro5 ,.pro6{
+.pro1 ,.pro2 ,.pro3 ,.pro4 ,.pro5 ,.pro6 ,.pro02 ,.pro01{
     box-shadow: 1px 1px 10px  rgb(179, 199, 1);
     border: 6px solid rgb(255, 250, 254);
+    transition: all 0.4s ease-in-out;
     border-radius: 12px;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-delay: 0.1s;
-    transition-timing-function: ease-in-out;
 }
-.pro1:hover ,.pro2:hover ,.pro3:hover ,.pro4:hover ,.pro5:hover ,.pro6:hover{
+.pro1:hover ,.pro2:hover ,.pro3:hover ,.pro4:hover ,.pro5:hover ,.pro6:hover,.pro02:hover ,.pro01:hover{
     transform: scale(1.055);
-    cursor: pointer;
+    cursor: pointer; 
 }
-.pro1 img{
-    width: 350px;
-    height: 400px;
-}
-.pro2 img{
-    width: 350px;
-    height: 400px;
-}
-.pro3 img{
-    width: 360px;
-    height: 340px;
-}
-.pro4 img{
-    width: 350px;
-    height: 340px;
-}
-.pro5 img{
-    width: 358px;
-    height: 350px;
-}
-.pro6 img{
-    width: 351px;
-    height: 350px; 
+.pro1 img ,.pro01 img , .pro02 img ,.pro2 img,.pro3 img ,.pro4 img ,.pro6 img ,.pro5 img{
+    width:400px;
+    height: 100%;
 }
 @media (max-width:767px) {
     header{
@@ -129,11 +114,16 @@ ul li a{
     header .logoname{
        font-size: 2rem;
     }
-    .container1 ,.container2 ,.container3{
+    .container1 ,.container2 ,.container3,.container0{
         flex-direction: column;
         align-items: center;
         row-gap: 30px;
     }
+}
+@media (max-width:576px){
+    #iconremove576{
+        display: none;
+     }
 }
 @media (max-width:390px) {
     nav ul{
