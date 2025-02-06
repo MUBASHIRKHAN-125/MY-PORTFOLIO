@@ -104,7 +104,7 @@ header i{
     width:400px;
     height: 100%;
 }
-@media (max-width:767px) {
+@media (max-width:770px) {
     header{
       display: flex;
       flex-direction: column;
@@ -125,6 +125,11 @@ header i{
         display: none;
      }
 }
+@media (max-width:430px) {
+    nav ul{
+column-gap: 14px;
+    }
+}
 @media (max-width:390px) {
     nav ul{
         column-gap: 30px;
@@ -132,7 +137,27 @@ header i{
        row-gap: 15px;
        justify-content: center;
     }
+   ul li a{
+        font-size: 1.3rem;
+    }
     header .name{
        font-size: 2rem;
+    }
+    .pro1 img, .pro01 img, .pro02 img, .pro2 img, .pro3 img, .pro4 img, .pro6 img, .pro5 img {
+        width: 340px;
+    }
+   }
+@media (max-width:330px) {
+    nav ul{
+        column-gap: 20px;
+    }
+    header .logoname{
+       font-size: 1.8rem;
+    }
+    .pro1 img, .pro01 img, .pro02 img, .pro2 img, .pro3 img, .pro4 img, .pro6 img, .pro5 img {
+        width: 300px;
+    }
+    .heading {
+        font-size: 1.7rem;
     }
    }

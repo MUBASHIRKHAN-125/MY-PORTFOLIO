@@ -163,7 +163,7 @@ footer p{
 .button{
     padding-top: 10px;
 }
-@media (max-width:767px) {
+@media (max-width:770px) {
     header{
       display: flex;
       flex-direction: column;
@@ -175,7 +175,7 @@ footer p{
     }
     .sec1{
         flex-direction: column;
-        row-gap: 40px;
+        row-gap: 80px;
     }
 }
 @media (max-width:567px) {
@@ -186,15 +186,42 @@ footer p{
         display: none;
      }
 }
+@media( max-width:430px) {
+    nav ul{
+        flex-wrap:wrap;
+        row-gap: 15px;
+        justify-content: center;
+    }
+}
 @media (max-width:390px) {
     nav ul{
-        column-gap: 30px;
+        column-gap: 25px;
        flex-wrap:wrap;
        row-gap: 15px;
        justify-content: center;
     }
     header .name{
        font-size: 2rem;
+    }
+   }
+@media (max-width:320px) {
+    nav ul{
+        column-gap:30px;
+    }
+    header .logoname{
+       font-size: 1.8rem;
+    }
+    .contact input {
+        font-size: 0.8rem;
+    }
+    .textarea textarea {
+        padding: 2px;
+    }
+    .contact h1 {
+        font-size: 2.3rem;
+    }
+    .sec1 {
+        padding: 60px 0px;
     }
    }
 

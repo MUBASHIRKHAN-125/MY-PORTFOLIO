@@ -19,7 +19,7 @@ header {
 
 header .name {
     color: rgb(70 217 217);
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
 }
 
@@ -66,7 +66,7 @@ nav ul li a {
     background-color: rgb(29 75 120);
     flex-wrap: wrap;
     row-gap: 40px;
-    padding: 100px 0px;
+    padding: 60px 0px;
 }
 
 .aboutimg {
@@ -85,6 +85,7 @@ nav ul li a {
     color: #7bdee9;
     word-spacing: 8px;
     font-size: 1.1rem;
+    line-height: 30px;
 }
 
 .aboutpara span {
@@ -160,6 +161,52 @@ nav ul li a {
     display: flex;
     column-gap: 6rem;
 }
+footer {
+    display: flex;
+    background-color: rgb(18 69 92);
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+    padding: 60px 0px;
+}
+
+.h2footer h2 {
+    font-size: 2.3rem;
+    color: white;
+    padding-top: 30px;
+}
+
+.anchorfooter {
+    display: flex;
+    column-gap: 30px;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 10px rgb(39, 73, 62);
+}
+#icon1:hover,
+#icon2:hover,
+#icon3:hover,
+#icon4:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+#icon1,
+#icon2,
+#icon3,
+#icon4 {
+    background-color: white;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    color: rgb(19, 140, 187);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-out;
+}
 @media (max-width:991px) {
     header{
         position: static;
@@ -173,7 +220,7 @@ nav ul li a {
         text-align: center;
     }
 }
-@media (max-width:767px) {
+@media (max-width:770px) {
     header{
       display: flex;
       flex-direction: column;
@@ -199,10 +246,28 @@ nav ul li a {
     #iconremove576{
         display: none;
      }
+     .aboutpara p {
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+    .h2footer h2 {
+        font-size: 2rem;
+    }
+}
+@media (max-width:430px) {
+    header ul{
+        column-gap: 14px;
+    }
+    .h2footer h2 {
+        text-align: center;
+    }
+    footer {
+        row-gap: 60px;
+    }
 }
 @media (max-width:390px) {
     nav ul{
-        column-gap: 35px;
+        column-gap: 30px;
        flex-wrap:wrap;
        row-gap: 15px;
        justify-content: center;
@@ -216,4 +281,18 @@ nav ul li a {
     .section1 {
         padding-top:50px;
     }
+    .aboutpara p {
+        word-spacing: 2px;
+    }
+   }
+   @media (max-width:330px){
+   .aboutimg img{
+    width: 300px;
+   }
+   header .name{
+    font-size: 1.8rem;
+ }
+ .anchorfooter {
+    column-gap: 18px;
+}
    }

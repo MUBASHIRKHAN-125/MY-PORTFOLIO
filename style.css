@@ -300,4 +300,7 @@ text-align:center ;
         column-gap:14px;
         justify-content: center;
      }
+     .h2footer h2 {
+        font-size: 3rem;
+    }
 }
