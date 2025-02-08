@@ -203,7 +203,7 @@ footer {
 .anchorfooter {
     display: flex;
     column-gap: 30px;
-    font-size: 4.12rem;
+    font-size: 3.8rem;
     text-align: center;
     text-shadow: 1px 1px 10px rgb(39, 73, 62);
 }
@@ -223,8 +223,8 @@ footer {
 #icon4 {
     background-color: white;
     border-radius: 50%;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     color: rgb(19, 140, 187);
     display: flex;
     justify-content: center;
