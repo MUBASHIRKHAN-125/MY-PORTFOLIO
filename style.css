@@ -107,10 +107,7 @@ nav ul li a {
     font-size: 15px;
     background: transparent;
     color: rgb(94, 235, 235);
-    transition-property: all;
-    transition-delay: 0.1s;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
+    transition: all 0.3s 0.1s ease-in-out;
     cursor: pointer;
 }
 
@@ -128,7 +125,7 @@ nav ul li a {
     padding: 8px 22px;
 }
 
-.but2 a {
+.but2 a , .but1 a {
     text-decoration: none;
     color: rgb(94, 235, 235);
 }

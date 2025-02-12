@@ -238,6 +238,14 @@ footer {
         flex-direction: column;
         row-gap: 30px;
     }
+    #icon1, #icon2, #icon3, #icon4{
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+}
+.anchorfooter {
+    font-size: 2rem;
+}
 }
 @media (max-width:567px) {
     header ul{

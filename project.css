@@ -5,7 +5,7 @@
 }
 body{
     font-family: sans-serif;
-    background-color: #004368;
+    background-color: #004368 !important;
 }
 header{
     display: flex;
@@ -25,6 +25,7 @@ ul{
     display: flex;
     list-style-type: none;
     column-gap: 30px;
+    margin: 0px !important; 
 }
 ul li:hover{
     transform:scale(1.1);
@@ -91,18 +92,36 @@ header i{
     padding-top: 30px;
 }
 .pro1 ,.pro2 ,.pro3 ,.pro4 ,.pro5 ,.pro6 ,.pro02 ,.pro01{
-    box-shadow: 1px 1px 10px  rgb(179, 199, 1);
-    border: 6px solid rgb(255, 250, 254);
+    box-shadow: 1px 1px 10px  rgb(139, 139, 139);
+    border: 6px solid rgb(87, 77, 90);
     transition: all 0.4s ease-in-out;
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .pro1:hover ,.pro2:hover ,.pro3:hover ,.pro4:hover ,.pro5:hover ,.pro6:hover,.pro02:hover ,.pro01:hover{
-    transform: scale(1.055);
+    transform: scale(1.033);
     cursor: pointer; 
 }
-.pro1 img ,.pro01 img , .pro02 img ,.pro2 img,.pro3 img ,.pro4 img ,.pro6 img ,.pro5 img{
-    width:400px;
+.pro01 img ,.pro02 img ,.pro4 img ,.pro5 img{
+    width: 400px;
+}
+.pro3 img {
+    width: 400px;
+    height: 128%;
+}
+.pro2 img{
+    width: 400px;
     height: 100%;
+}
+.pro1 img{
+    width: 400px;
+    height: 150%;
+}
+.pro6 img{
+    width: 400px;
+    height: 110%;
 }
 @media (max-width:770px) {
     header{
@@ -120,25 +139,39 @@ header i{
         row-gap: 30px;
     }
 }
-@media (max-width:576px){
+@media (max-width:580px){
     #iconremove576{
         display: none;
      }
+     nav ul{
+column-gap: 20px;
+     }
+
 }
 @media (max-width:430px) {
     nav ul{
 column-gap: 14px;
+padding: 0px;
+    }
+    ul li a{
+        font-size: 1.093rem;
+    }
+    .heading h1{
+        font-size: 2.09rem;
+    }
+    .sec1 {
+        padding-top: 0px;
     }
 }
 @media (max-width:390px) {
     nav ul{
-        column-gap: 30px;
+        column-gap: 18px;
        flex-wrap:wrap;
-       row-gap: 15px;
+       row-gap: 10px;
        justify-content: center;
     }
    ul li a{
-        font-size: 1.3rem;
+        font-size: 1.09rem;
     }
     header .name{
        font-size: 2rem;
