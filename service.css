@@ -1,76 +1,103 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: sans-serif;
     background-color: rgb(189 189 189);
 }
-header{
+
+header {
     display: flex;
     justify-content: space-around;
     background-color: #155e7e;
     padding: 27px 0px;
 }
-.logoname{
+
+.logoname {
     font-size: 1.40rem;
     color: aliceblue;
     cursor: pointer;
 }
-nav ul{
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul {
     display: flex;
     column-gap: 25px;
     list-style: none;
-} 
-ul li:hover{
-    transform: scale(1.2);
 }
-ul li{
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-delay: 0.1s;
-    transition-timing-function: ease-in-out;
+
+ul li:hover {
+    transform: scale(1.085);
 }
-ul li a:hover ,.service a{
-    text-decoration: underline;
+
+ul li {
+    transition: all 0.3s 0.1s ease-in-out;
+}
+
+ul li a:hover,
+.service a {
     color: white;
-    text-decoration-thickness: 2px;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
 }
-ul li a{
+
+ul li a {
     text-decoration: none;
     font-size: 1.22rem;
     color: rgb(255 242 68);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
 }
 .sec1{
+    padding: 15px 0px;
     text-align: center;
-    font-size: 1.89rem;
-    padding: 10px 0px;
+}
+.sec1 > big {
+    font-size: 1.9rem;
     color: #0c679f;
+    font-weight: bold;
+    transition: all 0.3s 0.1s ease-in-out;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 2px;
 }
-.sec1:hover{
-    text-decoration: underline;
-    text-decoration-color: black;
+
+.sec1 > big:hover {
+    border-bottom: 3px solid black;
 }
-#sec2 img{
+
+#sec2 img {
+    object-fit: cover;
     width: 100%;
     height: 60vh;
 }
-.sec3{
+
+.sec3 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 60px 0px;
 }
-.maincontainer{
+
+.maincontainer {
     display: flex;
     column-gap: 50px;
 }
-.card1:hover ,.card2:hover ,.card3:hover{
-   cursor: pointer;
-   transform: scale(1.033);
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    cursor: pointer;
+    transform: scale(1.033);
 }
-.card1 ,.card2 ,.card3{
+
+.card1,
+.card2,
+.card3 {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -79,34 +106,45 @@ ul li a{
     border-radius: 15px;
     background-color: white;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 2);
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-delay: 0.1s;
-    transition-timing-function: ease-in-out;
+    transition: all 0.3s 0.1s ease-in-out;
 }
-.card1 big:hover ,.card2  big:hover,.card3 big:hover{
+
+.card1 big:hover,
+.card2 big:hover,
+.card3 big:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
-.card1 big ,.card2  big,.card3 big{
+
+.card1 big,
+.card2 big,
+.card3 big {
     font-weight: bold;
     color: #b70829;
 }
-.head3{
+
+.head3 {
     text-align: center;
 }
-.card1 p ,.card2  p,.card3 p{
+
+.card1 p,
+.card2 p,
+.card3 p {
     line-height: 30px;
     word-spacing: 3px;
-   opacity: 0.5;
-   text-align: center;
+    opacity: 0.5;
+    text-align: center;
 }
-.text1,.text2,.text3{
+
+.text1,
+.text2,
+.text3 {
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
     color: #0b0a18;
 }
+
 footer {
     display: flex;
     background-color: rgb(100 99 93);
@@ -128,6 +166,7 @@ footer {
     font-size: 2.5rem;
     text-align: center;
 }
+
 #icon1:hover,
 #icon2:hover,
 #icon3:hover,
@@ -152,60 +191,90 @@ footer {
     align-items: center;
     transition: all 0.3s ease-out;
 }
+
 @media (max-width:770px) {
-    header{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      row-gap: 25px;
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
     }
-    header .logoname{
-       font-size: 2rem;
+
+    header .logoname {
+        font-size: 2rem;
     }
+
     .maincontainer {
-    flex-direction: column;
-    row-gap: 30px;
+        flex-direction: column;
+        row-gap: 30px;
     }
 }
+
 @media (max-width:567px) {
-    header ul{
+    header ul {
         column-gap: 15px;
     }
-   #iconremove576{
-    display: none;
-   }
-   .h2footer h2 {
-  text-align: center;
+
+    #iconremove576 {
+        display: none;
+    }
+
+    .h2footer h2 {
+        text-align: center;
+    }
 }
-}
+
 @media (max-width:390px) {
-    nav ul{
+    nav ul {
         column-gap: 30px;
-       flex-wrap:wrap;
-       row-gap: 15px;
-       justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        justify-content: center;
     }
-   }
-   @media (max-width:330px){
-    header ul{
-        column-gap: 20px;
-    }
-    header .logoname{
-        font-size: 1.8rem;
-    }
-    .sec1 {
-        font-size:1.4rem;
+        nav ul li a {
+            padding-bottom: 3px !important;
+        }
+        #icon1,
+    #icon2,
+    #icon3,
+    #icon4 {
+        border-radius: 50%;
+        height: 55px;
+        width: 55px;
     }
     .anchorfooter {
-        column-gap:20px;
+        column-gap: 20px;
+        font-size: 2rem;
+    }
+}
+@media (max-width:330px) {
+    header ul {
+        column-gap: 20px;
+    }
+
+    header .logoname {
         font-size: 1.8rem;
     }
+
+    .sec1 {
+        font-size: 1.4rem;
+    }
+
+    .anchorfooter {
+        column-gap: 20px;
+        font-size: 1.8rem;
+    }
+
     .h2footer h2 {
         font-size: 2rem;
     }
-    #icon1, #icon2, #icon3, #icon4 {
+
+    #icon1,
+    #icon2,
+    #icon3,
+    #icon4 {
         border-radius: 50%;
         height: 50px;
         width: 50px;
     }
-   }
+}

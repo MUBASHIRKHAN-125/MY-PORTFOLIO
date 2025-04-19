@@ -48,13 +48,12 @@ nav ul li:hover {
 .home a {
     color: #65db50;
     border-bottom: 1px solid;
-    padding-bottom: 6px;
+    padding-bottom: 5px;
 }
 
 nav ul li a:hover {
     color: #65db50;
     border-bottom: 1px solid;
-    padding-bottom: 5px;
 }
 
 nav ul li a {
@@ -63,7 +62,7 @@ nav ul li a {
     color: white;
     transition: all 0.3s 0.1s ease-in-out;
     border-bottom: 1px solid transparent;
-    padding-bottom: 5px
+    padding-bottom: 5px;
 }
 
 .section1 {
@@ -298,6 +297,11 @@ footer {
 .textname {
     font-size:26px;
 }
+}
+@media (max-width:390px){
+    nav ul li a {
+        padding-bottom: 3px !important;
+    }
 }
 @media (max-width:340px) {
     nav ul{
