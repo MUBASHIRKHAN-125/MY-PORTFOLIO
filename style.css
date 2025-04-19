@@ -10,6 +10,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -17,6 +18,8 @@ header {
     justify-content: space-around;
     background-color: #134068;
     padding: 28px 0px;
+    position: relative;
+    z-index: 10;
     position: sticky;
     top: 0px;
 }
@@ -26,7 +29,10 @@ header .name {
     font-size: 20px;
     cursor: pointer;
 }
-
+nav{
+    display: flex;
+    align-items: center;
+}
 nav ul {
     display: flex;
     list-style: none;
@@ -34,34 +40,30 @@ nav ul {
 }
 
 nav ul li {
-    transition-property: all;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0.1s;
-    transition-duration: 0.3s;
+    transition: all 0.3s 0.1s ease-in-out;
 }
-
 nav ul li:hover {
-    transform: scale(1.2);
+    transform: scale(1.085);
 }
-
 .home a {
     color: #65db50;
-    text-decoration: underline;
+    border-bottom: 1px solid;
+    padding-bottom: 6px;
 }
 
 nav ul li a:hover {
     color: #65db50;
-    text-decoration: underline;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
 }
 
 nav ul li a {
     text-decoration: none;
     font-size: 18px;
     color: white;
-    transition-property: all;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0.1s;
-    transition-duration: 0.3s;
+    transition: all 0.3s 0.1s ease-in-out;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px
 }
 
 .section1 {
@@ -75,19 +77,14 @@ nav ul li a {
 }
 
 .centerimage img {
-    box-shadow: 1px 1px 10px rgb(94, 202, 90);
+    box-shadow: 1px 1px 10px #35b391;
 }
 
 .centerimage {
     text-align: center;
 }
-
-.centerimage {
-    transform: translate(120px 0px);
-}
-
 .centerimage img {
-    border: 3px solid white;
+    border: 5px solid white;
     border-color: #115f4a;
     border-radius: 50%;
     width: 55%;
@@ -100,14 +97,13 @@ nav ul li a {
     padding-top: 20px;
 }
 
-.button .but1 button,
-.but2 button {
+.button :where(.but1 button , .but2 button){
     border: 3px solid rgb(38, 132, 226);
     border-radius: 6px;
     font-size: 15px;
     background: transparent;
     color: rgb(94, 235, 235);
-    transition: all 0.3s 0.1s ease-in-out;
+    transition: all 0.4s 0.1s linear;
     cursor: pointer;
 }
 
@@ -117,7 +113,7 @@ nav ul li a {
 }
 
 .button .but1 button:hover {
-    transform: scale(1.1);
+    transform: scale(1.063);
     box-shadow: 1px 1px 10px skyblue;
 }
 
@@ -132,7 +128,7 @@ nav ul li a {
 
 .button .but2 button:hover {
     background-color: #0752a2;
-    transform: scale(1.1);
+    transform: scale(1.063);
     box-shadow: 1px 1px 10px skyblue;
 }
 
@@ -151,19 +147,16 @@ nav ul li a {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
     padding: 90px 0px;
 }
-
-.introhome p,
-p,
-p,
-p,
-p {
+.introhome{
+    width:60%;
+    text-align: center;
+}
+.introhome > p {
     word-spacing: 4px;
     color: #ffffff;
     font-size: 20px;
-    text-align: center;
     padding-bottom: 20px;
 }
 
@@ -178,7 +171,7 @@ p a {
     color: #17970f;
 }
 
-.myavator {
+.myavator  {
     transform: scale(1.5);
 }
 
@@ -200,7 +193,7 @@ footer {
 .anchorfooter {
     display: flex;
     column-gap: 30px;
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     text-align: center;
     text-shadow: 1px 1px 10px rgb(39, 73, 62);
 }
@@ -208,7 +201,7 @@ footer {
 #icon2:hover,
 #icon3:hover,
 #icon4:hover {
-    transform: scale(1.2);
+    transform: scale(1.113);
     cursor: pointer;
     background-color: red;
     color: white;
@@ -220,13 +213,18 @@ footer {
 #icon4 {
     background-color: white;
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    height: 55px;
+    width: 55px;
     color: rgb(19, 140, 187);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s linear;
+}
+@media (max-width:1024px){
+    .introhome{
+        width:70%;
+    }
 }
 @media (max-width:991px) {
     header{
@@ -254,8 +252,12 @@ footer {
         height: 50px;
         width: 50px;
 }
+.introhome{
+    width:83%;
+}
 .anchorfooter {
     font-size: 3rem;
+    column-gap: 20px;
 }
 }
 @media (max-width:567px) {
@@ -263,13 +265,18 @@ footer {
         column-gap: 20px;
     }
    .h2footer h2{ 
-text-align:center ;
+    text-align:center;
+    font-size: 30px;
     }
     #iconremove576{
        display: none;
     }
-    .introhome p, p, p, p, p {
+    .introhome > p{
         word-spacing: 2px;
+        font-size: 18px;
+    }
+    .introhome{
+        width:92%;
     }
 }
 @media (max-width:450px) {
@@ -300,4 +307,22 @@ text-align:center ;
      .h2footer h2 {
         font-size: 3rem;
     }
+    .introhome{
+        width:98%;
+    }
+    .button{
+        column-gap: 13px;
+    }
+    .textname{
+        font-size: 22px;
+    }
+    p a {
+        font-size: 2.3rem;
+    }
+    #icon1, #icon2, #icon3, #icon4{
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        font-size: 2.6rem;
+}
 }
