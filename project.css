@@ -18,7 +18,7 @@ nav{
     align-items: center;
 }
 .logoname{
-    font-size: 1.4rem;
+    font-size:20px;
     color: white;
 }
 ul{
@@ -28,16 +28,13 @@ ul{
     margin: 0px !important; 
 }
 ul li:hover{
-    transform:scale(1.1);
+    transform: scale(1.085);
 }
 ul li{
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-delay: 0.1s;
-    transition-timing-function: ease-in-out;
+    transition: all 0.4s 0.1s ease-in-out;
 }
 ul li a:hover , .project a{
-    text-decoration: underline;
+    border-bottom: 1px solid;
     color:rgb(244, 247, 239);
 }
 ul li a{
@@ -45,22 +42,25 @@ ul li a{
     font-weight: bold;
     text-decoration: none;
     font-size: 18.4px;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-delay: 0.1s;
-    transition-timing-function: ease-in-out;
-}
-header i{
-    font-size: px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.4s 0.1s ease-in-out;
 }
 .heading{
     text-align: center;
+    padding-top: 40px;
+
+}
+.heading > big{
     font-size: 2rem;
     color: white;
-    padding-top: 40px;
+    transition: 0.3s 0.1s linear;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 1px;
+    font-family: "popins";
 }
-.heading:hover{
-    text-decoration: underline;
+.heading > big:hover{
+    border-bottom: 3px solid;
     text-decoration-color: #c7c2c2;
 }
 .sec1{
@@ -92,8 +92,8 @@ header i{
     padding-top: 30px;
 }
 .pro1 ,.pro2 ,.pro3 ,.pro4 ,.pro5 ,.pro6 ,.pro02 ,.pro01{
-    box-shadow: 1px 1px 10px  rgb(139, 139, 139);
-    border: 6px solid rgb(87, 77, 90);
+    box-shadow: 1px 1px 10px  rgb(116, 114, 111);
+    border: 6px solid rgb(97, 97, 94);
     transition: all 0.4s ease-in-out;
     border-radius: 12px;
     display: flex;
@@ -101,7 +101,7 @@ header i{
     justify-content: space-between;
 }
 .pro1:hover ,.pro2:hover ,.pro3:hover ,.pro4:hover ,.pro5:hover ,.pro6:hover,.pro02:hover ,.pro01:hover{
-    transform: scale(1.033);
+    transform: scale(1.020);
     cursor: pointer; 
 }
 .pro01 img ,.pro02 img ,.pro4 img ,.pro5 img{
