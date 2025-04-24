@@ -62,10 +62,11 @@ nav ul li a:hover,
 }
 
 .contact input {
-    padding: 8px 73px;
+    padding: 8px 66px;
     border-radius: 6px;
     border: 1px solid black;
     font-size: 1rem;
+    outline:none;
 }
 
 .contact input::placeholder {
@@ -78,6 +79,7 @@ nav ul li a:hover,
     font-weight: bold;
     text-align: center;
     padding: 5px;
+    outline: none;
 }
 
 .textarea textarea::placeholder {
@@ -175,7 +177,7 @@ footer p {
     cursor: pointer;
     background-color: white;
     color: black;
-    transform: scale(1.06);
+    transform: scale(1.036);
 }
 
 .but button {
@@ -227,6 +229,9 @@ footer p {
         row-gap: 15px;
         justify-content: center;
     }
+    .contact input {
+        padding: 8px 60px;
+    }
 }
 
 @media (max-width:390px) {
@@ -254,7 +259,7 @@ footer p {
     }
 }
 
-@media (max-width:340px) {
+@media (max-width:348px) {
     nav ul {
         column-gap: 30px;
     }
@@ -265,10 +270,11 @@ footer p {
 
     .contact input {
         font-size: 0.8rem;
+        padding: 8px 76px;
     }
 
     .textarea textarea {
-        padding: 2px;
+        padding: 1px;
     }
 
     .contact h1 {
