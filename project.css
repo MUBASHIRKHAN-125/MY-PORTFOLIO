@@ -157,6 +157,9 @@ footer {
     footer {
         padding-bottom:50px;
     }
+#grocery{
+    height: 270px;
+}
 }
 
 @media (max-width:580px) {
@@ -228,4 +231,8 @@ footer {
         height: 50px;
         width: 50px;
     }
+    #grocery{
+       object-fit: cover;
+    }
+
 } 
