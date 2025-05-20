@@ -91,6 +91,7 @@ ul li a {
     transition: all 0.3s 0.1s linear;
     cursor: pointer;
 }
+
 #cardhover:hover{
     transform: scale(1.0173);
 }
@@ -157,9 +158,6 @@ footer {
     footer {
         padding-bottom:50px;
     }
-#grocery{
-    height: 270px;
-}
 }
 
 @media (max-width:580px) {
@@ -233,6 +231,9 @@ footer {
     }
     #grocery{
        object-fit: cover;
+    }
+    .container{
+        padding:0px 8px !important;
     }
 
 } 
