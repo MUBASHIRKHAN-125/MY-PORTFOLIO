@@ -104,7 +104,7 @@ nav ul li a {
 
 .mainskill {
     display: flex;
-    column-gap: 6rem;
+    column-gap: 4rem;
     padding: 20px;
 }
 
@@ -116,7 +116,7 @@ nav ul li a {
     background-color: rgba(28, 78, 87, 0.8);
     padding: 10px;
     border-radius: 8px;
-    box-shadow: -1px 1px 14px rgba(0, 0, 0, 0.8);
+    box-shadow: -3px 1px 14px rgba(0, 0, 0, 0.8);
     transition: all 0.3s 0.1s ease-in-out;
 }
 
